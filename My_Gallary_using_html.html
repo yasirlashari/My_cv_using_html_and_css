@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  #imageContainer {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #imageContainer img {
+    max-width: 200px;
+  }
+  #hiddenImage {
+    display: none;
+  }
+  #hiddenImage:target {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div id="imageContainer">
+    <a href="#hiddenImage">
+      <img src="2.jpg" alt="First Image">
+    </a>
+  </div>
+  <div id="hiddenImage">
+    <img src="1.JPG" alt="Second Image">
+  </div>
+</body>
+</html>
